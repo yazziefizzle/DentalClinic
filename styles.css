@@ -1,0 +1,85 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TOP NAV START */
+.container {
+    width: 70%;
+    height: 3rem;
+    margin: auto;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_nav {
+    border: solid #d2d2d2 1.5px;
+}
+
+li {
+    list-style: none;
+    display: inline-flex;
+    padding: .5rem;
+    color: #2BAAEC; 
+}
+.social {
+    justify-content: flex-end;  
+}
+
+.working-hours {
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    font-family: Roboto;
+}
+.text {
+    
+    color: #626262;
+    padding: 0 0 0 1rem;
+}
+/* TOP NAV SLUT, fixa placering */
+/* MAIN NAV START */
+
+.container2 {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    
+    
+}
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* .ul {
+
+} */
+.link {
+    font-family: Roboto Slab;
+    color: #363636;
+    list-style: none;
+    text-decoration: none;
+}
+/* MAIN NAV END */
+/* SHOWCASE START */
+.container-showcase {
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0;
+
+}
+.kvinna {
+    width: 300px;
+}
+
+.rubrik1 {
+    font-family: Roboto;
+}

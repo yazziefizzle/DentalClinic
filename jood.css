@@ -1,0 +1,29 @@
+/* footer -- start */
+.container-bg {
+    width: 100%;
+    max-width: 1440px;
+  }
+  
+  .footer-1 {
+    background-image: url("../img/Bg.svg");
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .footer_content {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  .footer_content li {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .footer_content a {
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 20px;
+  }
