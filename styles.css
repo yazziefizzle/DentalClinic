@@ -1,11 +1,14 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@357&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* TOP NAV START */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* TOP MENU START */
 .container {
     width: 70%;
     height: 3rem;
@@ -27,7 +30,7 @@ li {
     padding: .5rem;
     color: #2BAAEC; 
 }
-.social {
+.social-ikoner {
     justify-content: flex-end;  
 }
 
@@ -35,51 +38,146 @@ li {
     display: flex;
     align-items: center;
     padding-left: .5rem;
-    font-family: Roboto;
 }
-.text {
-    
+.clock {
+    padding-right: .5rem;
+}
+.text h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #363636;
+    padding: 0 0 0 1rem;
+}
+
+.text p {
+
     color: #626262;
     padding: 0 0 0 1rem;
 }
-/* TOP NAV SLUT, fixa placering */
-/* MAIN NAV START */
+/* TOP MENU SLUT, fixa placering */
 
+/* MAIN MENU START */
 .container2 {
     width: 80%;
     margin: auto;
-    padding: 2rem;
-    
+    padding: 2rem;  
     
 }
 .nav-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
-/* .ul {
 
-} */
-.link {
-    font-family: Roboto Slab;
+.link a {
     color: #363636;
-    list-style: none;
     text-decoration: none;
 }
-/* MAIN NAV END */
+/* MAIN MENU END */
+
 /* SHOWCASE START */
+#showcase {
+   background: #dedede;
+}
 .container-showcase {
-    background: #dedede;
+    width: auto;
     display: flex;
     align-items: center;
-    padding: 1rem 0 0 0;
-
-}
-.kvinna {
-    width: 300px;
+    margin-right: 10px;
 }
 
-.rubrik1 {
-    font-family: Roboto;
+.woman {
+    margin-top: 1rem;
+    margin-left: 10rem;
+    height: 30rem;
+    padding-right: 4rem;
 }
+
+#showcase h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #363636;
+    font-size: 60px;
+    margin-bottom: .5rem;
+   
+}
+#showcase p {
+    color: #626262;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    /*  */
+
+}
+.button {
+    width: 10rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    border: none;
+    background: #25E6C8;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* .btn 1{
+    background: #2BAAEC;
+    HOOVRA DETTA
+} */
+/* SHOWCASE SLUT */
+
+/* ABOUT US START */
+#about-us {
+align-items: center;
+}
+#about-us .container {
+    width: 75%;
+    height: 50%;
+    /* background: coral; */
+    align-items: center;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #363636;
+    font-size: 40px;
+}
+.color-clinic {
+    color: #2BAAEC;
+}
+
+.about-text p {
+    color: #626262;
+    font-size: 18px;
+    margin-top: 2rem;
+}
+.under-line {
+    color: #25E6C8;
+}
+
+.man {
+    height: 30rem;
+    margin-top: 3rem;
+    justify-content: flex-end;
+}
+
+.container2 {
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.number1 h2 {
+    color: #2BAAEC;
+}
+.number2 h2 {
+    color: #2BAAEC;
+}
+.number3 h2 {
+    color: #2BAAEC;
+}
+    
+
+
+
+
