@@ -24,19 +24,26 @@ body {
     border: solid #d2d2d2 1.5px;
 }
 
+.social-ikon {
+    justify-content: flex-end;  
+}
+
 li {
     list-style: none;
     display: inline-flex;
     padding: .5rem;
     color: #2BAAEC; 
 }
-.social-ikoner {
-    justify-content: flex-end;  
+
+.social-ikon li:hover {
+    /* background-color: rgb(109, 109, 116); */
+    color: #25E6C8;
 }
 
 .working-hours {
     display: flex;
     align-items: center;
+    color: #626262;
     padding-left: .5rem;
 }
 .clock {
@@ -45,27 +52,29 @@ li {
 .text h1 {
     font-family: 'Roboto Slab', serif;
     color: #363636;
-    padding: 0 0 0 1rem;
+    /* padding: 0 0 0 1rem; */
+    line-height: 4rem;
 }
 
 .text p {
-
+    padding: 5px;
     color: #626262;
-    padding: 0 0 0 1rem;
+    line-height: 1.5rem;
+    /* padding: 0 0 0 1rem; */
 }
 /* TOP MENU SLUT, fixa placering */
 
 /* MAIN MENU START */
-.container2 {
-    width: 80%;
+.container1 {
+    width: 70%;
     margin: auto;
-    padding: 2rem;  
-    
+    padding: 2rem;
 }
 .nav-flex {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+   
 }
 
 .link a {
@@ -101,25 +110,25 @@ li {
 }
 #showcase p {
     color: #626262;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 1rem;
     /*  */
 
 }
 .button {
-    width: 10rem;
-    height: 2.3rem;
+    width: 11rem;
+    height: 2.7rem;
     border-radius: 5px;
     border: none;
     background: #25E6C8;
     color: #fff;
-    font-size: 12px;
+    font-size: 12.5px;
     font-weight: bold;
 }
-/* .btn 1{
+.button:hover {
     background: #2BAAEC;
-    HOOVRA DETTA
-} */
+}
+
 /* SHOWCASE SLUT */
 
 /* ABOUT US START */
@@ -140,44 +149,156 @@ align-items: center;
 
 .about-text h2 {
     font-family: 'Roboto Slab', serif;
+    padding-top: 5rem;
     color: #363636;
     font-size: 40px;
 }
 .color-clinic {
     color: #2BAAEC;
 }
-
 .about-text p {
     color: #626262;
-    font-size: 18px;
+    /* font-size: 18px; */
     margin-top: 2rem;
+    line-height: 1.7rem;
 }
-.under-line {
-    color: #25E6C8;
-}
-
 .man {
     height: 30rem;
     margin-top: 3rem;
     justify-content: flex-end;
 }
 
-.container2 {
-    width: 50%;
-    justify-content: flex-start;
+.number {
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
-.number1 h2 {
+.number h2 {
+    padding: 5px;
     color: #2BAAEC;
-}
-.number2 h2 {
-    color: #2BAAEC;
-}
-.number3 h2 {
-    color: #2BAAEC;
-}
+    font-family: 'Roboto Slab', serif;
     
+}
+.number p {
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+    justify-content: center;
+
+}
+/* SERVICE */
+#service {
+    padding: 5rem;
+    background: #F7F7F7;
+}
+.container-service {
+    width: 75%;
+    margin: 0 auto 0;
+    padding-bottom: 2rem;
+}
+.title-service {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    padding: 3rem;
+    text-align: center;
+}
+.line2 {
+    text-align: center;
+}
+
+.row {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,400px);
+    gap: 2rem;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+}
+.logo {
+    width: 120px;
+    height: 120px;
+    background-color: #25E6C8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body h3{
+    /* padding: 1rem; */
+    text-align: center;
+    color: #363636;
+    font-family: 'Roboto Slab', serif;
+}
+.card-body p{
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.8rem;
+     color: #626262;
+     /* font-size: 12px */
+}
+.card:hover {
+    box-shadow: 2px 2px 1rem #707070;
+
+}
+.logo:hover {
+    background-color: #2BAAEC;
+    
+}
 
 
+/* BOOKING START */
+#appointment {
+    background-color: #2ba8ecc4;
+    opacity: transition;
+}
 
 
+.container-booking {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-booking h3 {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 590;
+}
+     
+.booking {
+    border: none;
+    border-radius: 10px;
+    width: 11rem;
+    padding: .5rem;
+      
+}
+.btn {
+    background: #fff;
+    color: #2ba8ecc4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* FOOTER */
+.footer-container {
+    background-color: #2BAAEC;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F3FBFF;
+}
+.footer-container p {
+    opacity: 60%;
+}
