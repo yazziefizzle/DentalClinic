@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@357&display=swap');
+:root {
+    --blue-color: #2BAAEC;
+    --green-color: #25E6C8;
+    --title-color: #363636;
+    --text-color: #626262;
+    --placeholder-woman: #BFBFBF;
+    --placeholder-man: #DEDEDE;
+    --background-service: #F7F7F7;
+    --outline-color: #D2D2D2;
+    --footer-color: #F3FBFF;
+    --white-color: #FFFFFF;
+    --circle-border: #D4EEFB    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
 }
-/* TOP MENU START */
+
+
+/* ---TOP MENU START--- */
 .container {
-    width: 70%;
-    height: 3rem;
+    width: 80%;
+    height: 4rem;
     margin: auto;
 }
 .d-flex {
@@ -19,192 +34,176 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .top_nav {
-    border: solid #d2d2d2 1.5px;
+    border: solid var(--outline-color) 1.5px;
 }
-
 .social-ikon {
     justify-content: flex-end;  
 }
-
 li {
     list-style: none;
     display: inline-flex;
     padding: .5rem;
-    color: #2BAAEC; 
+    color: var(--blue-color);
 }
-
 .social-ikon li:hover {
-    /* background-color: rgb(109, 109, 116); */
-    color: #25E6C8;
+    color: var(--green-color)
 }
-
 .working-hours {
     display: flex;
     align-items: center;
-    color: #626262;
-    padding-left: .5rem;
+    color: var(--text-color);
+    padding-left:.5rem;
 }
 .clock {
     padding-right: .5rem;
 }
 .text h1 {
     font-family: 'Roboto Slab', serif;
-    color: #363636;
-    /* padding: 0 0 0 1rem; */
+    color: var(--title-color);
     line-height: 4rem;
 }
-
 .text p {
     padding: 5px;
-    color: #626262;
+    color: var(--text-color);
     line-height: 1.5rem;
-    /* padding: 0 0 0 1rem; */
 }
-/* TOP MENU SLUT, fixa placering */
+/* ---TOP MENU SLUT---*/
 
-/* MAIN MENU START */
+
+/* ---MAIN MENU START--- */
 .container1 {
-    width: 70%;
-    margin: auto;
-    padding: 2rem;
+    width: 80%;
+    height: 10rem;
+    margin: 0 auto;
+    padding: 1.3rem;
 }
 .nav-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
-
 .link a {
-    color: #363636;
+    color: var(--title-color);
     text-decoration: none;
+    font-family: 'Roboto Slab', serif;
 }
-/* MAIN MENU END */
+/* ---MAIN MENU END--- */
 
-/* SHOWCASE START */
+
+/* ---SHOWCASE START--- */
 #showcase {
-   background: #dedede;
+   background: var(--placeholder-man);
 }
 .container-showcase {
-    width: auto;
+    width: 70%;
+    margin-left: 10%;
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    justify-content: space-between;  
 }
-
 .woman {
-    margin-top: 1rem;
-    margin-left: 10rem;
-    height: 30rem;
-    padding-right: 4rem;
+   padding-top: 1rem;
 }
-
 #showcase h1 {
     font-family: 'Roboto Slab', serif;
-    color: #363636;
-    font-size: 60px;
-    margin-bottom: .5rem;
-   
+    color: var(--title-color);
+    font-size: 50px;
+    font-weight:600;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;  
 }
 #showcase p {
-    color: #626262;
+    color: var(--text-color);
     font-size: 16px;
-    margin-bottom: 1rem;
-    /*  */
-
+    margin-bottom: 1.5rem;
 }
-.button {
-    width: 11rem;
-    height: 2.7rem;
-    border-radius: 5px;
+.showcase-btn {
+    text-align: center;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 7px;
     border: none;
-    background: #25E6C8;
-    color: #fff;
-    font-size: 12.5px;
-    font-weight: bold;
+    background: var(--green-color);
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: 700;
 }
-.button:hover {
-    background: #2BAAEC;
+.showcase-btn:hover {
+    background: var(--blue-color);
 }
+/* ---SHOWCASE SLUT--- */
 
-/* SHOWCASE SLUT */
 
-/* ABOUT US START */
-#about-us {
-align-items: center;
-}
-#about-us .container {
-    width: 75%;
-    height: 50%;
-    /* background: coral; */
-    align-items: center;
-}
-.d-flex {
+/* ---ABOUT US START--- */
+.container-about {
+    width: 80%;
+    margin-left: 10%;
+    background-color: var(--white-color);
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-
-.about-text h2 {
+.about-content h2 {
     font-family: 'Roboto Slab', serif;
     padding-top: 5rem;
-    color: #363636;
+    color: var(--title-color);
     font-size: 40px;
 }
-.color-clinic {
-    color: #2BAAEC;
+.about-content span {
+    color: var(--blue-color);
 }
-.about-text p {
-    color: #626262;
-    /* font-size: 18px; */
+.content-text {
+    color: var(--text-color);
     margin-top: 2rem;
+    margin-bottom: 2rem;
     line-height: 1.7rem;
 }
-.man {
-    height: 30rem;
+.about-number {
+    display: flex;
+    column-gap: 6rem;
+}
+.about-number h3 {
     margin-top: 3rem;
-    justify-content: flex-end;
-}
-
-.number {
-    /* justify-content: space-between; */
-    align-items: center;
-}
-
-.number h2 {
-    padding: 5px;
-    color: #2BAAEC;
+    color: var(--blue-color);
+    font-size: 28px;
     font-family: 'Roboto Slab', serif;
-    
+    font-weight:600;    
 }
-.number p {
-    color: #363636;
+.number-text {
+    color: var(--title-color);
     font-family: 'Roboto Slab', serif;
     justify-content: center;
-
+    margin-top: .5rem;
+    margin-bottom: 6rem;
 }
-/* SERVICE */
+.man {
+    padding-top: 5rem;
+    margin-bottom: -4px;
+    margin-left: 6rem;
+}
+/* ---SHOWCASE END--- */
+
+
+/* ---SERVICE START---  */
 #service {
     padding: 5rem;
-    background: #F7F7F7;
+    background: var(--background-service);
 }
 .container-service {
-    width: 75%;
+    width: 80%;
     margin: 0 auto 0;
     padding-bottom: 2rem;
 }
 .title-service {
     font-family: 'Roboto Slab', serif;
-    font-size: 20px;
+    font-size: 25px;
     padding: 3rem;
     text-align: center;
 }
 .line2 {
     text-align: center;
+    padding-bottom: 0.5rem;
 }
-
 .row {
     display: grid;
     align-items: center;
@@ -213,12 +212,11 @@ align-items: center;
     gap: 2rem;
 }
 .card {
-    background-color: white;
-    border-radius: 10px;
+    background-color: var(--white-color);
+    border-radius: 8px;
     width: 400px;
     height: 400px;
 }
-
 .card-header {
     display: flex;
     justify-content: center;
@@ -228,77 +226,91 @@ align-items: center;
 .logo {
     width: 120px;
     height: 120px;
-    background-color: #25E6C8;
+    background-color: var(--green-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card-body h3{
-    /* padding: 1rem; */
     text-align: center;
-    color: #363636;
+    color: var(--title-color);
     font-family: 'Roboto Slab', serif;
 }
 .card-body p{
     padding: 1rem;
     text-align: center;
     line-height: 1.8rem;
-     color: #626262;
-     /* font-size: 12px */
+     color: var(--text-color);
 }
 .card:hover {
-    box-shadow: 2px 2px 1rem #707070;
-
+    box-shadow: 0px 10px 30px #0000001f;
+    transition-delay: .3s;
 }
-.logo:hover {
-    background-color: #2BAAEC;
-    
+.card:hover .logo {
+    background-color: var(--blue-color);
+    transition-property: box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 0 10px var(--circle-border);
 }
+/* ---SERVICE SLUT--- */
 
 
-/* BOOKING START */
+/* ---APPOINTMENT START--- */
 #appointment {
-    background-color: #2ba8ecc4;
-    opacity: transition;
-}
-
-
-.container-booking {
-    height: 150px;
+    height: 165px;
+    background-color: #4EB4E8;
+  }
+  .appointment-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.container-booking h3 {
-    color: #fff;
+    justify-content: space-between;
+    height: 165px;
+  }
+  .appointment-text  {
+    color: var(--white-color);
+    margin-left: 17%;
+    text-align: left;
     font-family: 'Roboto Slab', serif;
-    font-weight: 590;
-}
-     
-.booking {
-    border: none;
-    border-radius: 10px;
-    width: 11rem;
-    padding: .5rem;
-      
-}
-.btn {
-    background: #fff;
-    color: #2ba8ecc4;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
+    font-size: 1.5rem;
+  }
+  .appointment-button {
+      margin-right: 17%;
+      border: none;
+  }
+  .appointment-btn {
+      text-align: center;
+      border: none;
+      width: 13rem;
+      height: 2.9rem;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 700;
+      background-color: var(--white-color);
+      color: #2ba8ecd3;
+  }
+  .appointment-btn:hover {
+      background-color: #4EB4E8;
+      color: var(--white-color);
+      border: solid 2px var(--white-color);
+  }
+/* ---APPOINTMENT SLUT--- */
 
-/* FOOTER */
+
+/* ---FOOTER--- */
 .footer-container {
-    background-color: #2BAAEC;
+    background-color: var(--blue-color) ;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #F3FBFF;
+    color: var(--footer-color);
 }
 .footer-container p {
     opacity: 60%;
 }
+/* ---FOOTER END--- */
+
+
+/* ---MEDIA QUERYS--- */
