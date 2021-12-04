@@ -20,10 +20,12 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
 }
 
 
 /* ---TOP MENU START--- */
+
 .container {
     width: 80%;
     height: 4rem;
@@ -72,11 +74,11 @@ li {
 
 
 /* ---MAIN MENU START--- */
+
 .container1 {
     width: 80%;
     height: 10rem;
     margin: 0 auto;
-    padding: 1.3rem;
 }
 .nav-flex {
     display: flex;
@@ -92,12 +94,13 @@ li {
 
 
 /* ---SHOWCASE START--- */
+
 #showcase {
    background: var(--placeholder-man);
 }
 .container-showcase {
-    width: 70%;
-    margin-left: 10%;
+    width: 80%;
+    padding-left: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -136,9 +139,10 @@ li {
 
 
 /* ---ABOUT US START--- */
+
 .container-about {
     width: 80%;
-    margin-left: 10%;
+    padding-left: 10%;
     background-color: var(--white-color);
     display: flex;
     align-items: center;
@@ -154,8 +158,8 @@ li {
 }
 .content-text {
     color: var(--text-color);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
     line-height: 1.7rem;
 }
 .about-number {
@@ -163,7 +167,7 @@ li {
     column-gap: 6rem;
 }
 .about-number h3 {
-    margin-top: 3rem;
+    padding-top: 1rem;
     color: var(--blue-color);
     font-size: 28px;
     font-family: 'Roboto Slab', serif;
@@ -173,18 +177,19 @@ li {
     color: var(--title-color);
     font-family: 'Roboto Slab', serif;
     justify-content: center;
-    margin-top: .5rem;
-    margin-bottom: 6rem;
+    padding-top: .5rem;
+    padding-bottom: 6rem;
 }
 .man {
     padding-top: 5rem;
+    padding-left: 6rem;
     margin-bottom: -4px;
-    margin-left: 6rem;
 }
 /* ---SHOWCASE END--- */
 
 
 /* ---SERVICE START---  */
+
 #service {
     padding: 5rem;
     background: var(--background-service);
@@ -208,7 +213,7 @@ li {
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3, 400px);
     gap: 2rem;
 }
 .card {
@@ -258,6 +263,7 @@ li {
 
 
 /* ---APPOINTMENT START--- */
+
 #appointment {
     height: 165px;
     background-color: #4EB4E8;
@@ -270,13 +276,13 @@ li {
   }
   .appointment-text  {
     color: var(--white-color);
-    margin-left: 17%;
+    padding-left: 17%;
     text-align: left;
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
   }
   .appointment-button {
-      margin-right: 17%;
+      padding-right: 17%;
       border: none;
   }
   .appointment-btn {
@@ -299,6 +305,7 @@ li {
 
 
 /* ---FOOTER--- */
+
 .footer-container {
     background-color: var(--blue-color) ;
     height: 60px;
@@ -311,6 +318,3 @@ li {
     opacity: 60%;
 }
 /* ---FOOTER END--- */
-
-
-/* ---MEDIA QUERYS--- */
